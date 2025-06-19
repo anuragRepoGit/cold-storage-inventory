@@ -25,7 +25,7 @@ public class Token {
     private LocalDate arrivalDate;
 
     @Column(name = "estimated_packets", nullable = false)
-    private String estimatedPackets;
+    private int estimatedPackets;
 
     @OneToOne
     @JoinColumn(name = "farmer_id", nullable = false, unique = true)
